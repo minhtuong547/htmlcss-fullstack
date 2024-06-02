@@ -1,0 +1,7 @@
+{
+    "liveServer.settings.multiRootWorkspaceName": "duan",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
