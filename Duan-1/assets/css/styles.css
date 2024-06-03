@@ -231,3 +231,47 @@ body {
 .guides-cta .btn {
     min-width: 170px;
 }
+/* featured */
+.featured {
+    display: flex;
+    background: #f5fafe;
+    margin-top: 230px;
+}
+
+.featured .header {
+    margin-top: 110px;
+    background: none;
+    min-width: 100vw;
+}
+
+.featured .sub-title {
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 35px; /* 100% */
+}
+
+.featured .row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.featured .desc {
+    color: #5a6473;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+}
+
+.featured .link {
+    display: flex;
+    align-items: center;
+    color: #0689ff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.featured .link .vertor {
+    margin-left: 8px;
+}
