@@ -1,19 +1,21 @@
 * {
     box-sizing: border-box;
 }
-
+a {
+    text-decoration: none;
+}
 html {
     font-size: 62.5%;
 }
 
 body {
     font-size: 1.6rem;
-    font-family: "Poppings";
+    font-family: "Poppings", sans-serif;
 }
 
 .header {
     background: #e6f0ff;
-    height: 100vh; 
+    height: 100vh;
 }
 
 .content {
@@ -23,5 +25,21 @@ body {
 }
 
 .navbar {
+    display: flex;
+    align-items: center;
+}
 
+.navbar ul {
+    display: flex;
+}
+
+.navbar .acctions {
+    margin-left: auto;
+}
+
+.navbar ul a {
+    font-size: 1.4rem;
+    color: #4f5361;
+    font-weight: 500;
+    padding: 0 14px;
 }
