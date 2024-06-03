@@ -152,3 +152,71 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+.guides {
+    margin-top: 200px;
+}
+
+.guides .sub-title {
+    position: relative;
+    color: #000339;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 35px; /* 100% */
+}
+
+.guides .sub-title::before {
+    content: "";
+    display: inline-block;
+    height: 4px;
+    width: 41px;
+    border-radius: 12px;
+    background: #000339;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.guides .desc {
+    width: 430px;
+    max-width: 100%;
+    margin: 20px auto 0;
+    color: #5a6473;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+}
+
+.list-guide {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.guide-item {
+    margin: 0 70px;
+    text-align: center;
+}
+
+.guide-item .title {
+    margin-top: 26px;
+    color: #3b3c45;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 22px; /* 110% */
+}
+
+.guide-item .link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0689ff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.guide-item .vertor {
+    margin-left: 6px;
+}
