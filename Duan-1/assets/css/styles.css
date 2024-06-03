@@ -27,7 +27,7 @@ html {
 }
 
 body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     font-size: 1.6rem;
     font-family: "Poppings", sans-serif;
 }
@@ -100,9 +100,9 @@ body {
 .hero .title {
     margin-top: 18px;
     color: #000336;
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 76px; /* 118.75% */
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 1.19; /* 118.75% */
 }
 
 .hero .desc {
@@ -120,6 +120,35 @@ body {
 
 .hero-img {
     position: absolute;
-    right: calc((100vw - 1110px) / 2 - 10px);
+    right: calc((100vw - 1110px) / 2 - 100px);
     bottom: 0;
+}
+
+/* clients */
+
+.clients {
+    margin-top: 122px;
+}
+
+.clients .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .desc {
+    color: #7d8589;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.row-desc {
+    margin-top: 23px;
+}
+
+.clients .images {
+    margin-top: 96px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
