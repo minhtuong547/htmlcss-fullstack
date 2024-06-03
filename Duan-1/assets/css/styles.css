@@ -27,6 +27,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     font-size: 1.6rem;
     font-family: "Poppings", sans-serif;
 }
@@ -119,6 +120,6 @@ body {
 
 .hero-img {
     position: absolute;
-    right: calc((100vw - 1110px) / 2 - 100px);
+    right: calc((100vw - 1110px) / 2 - 10px);
     bottom: 0;
 }
