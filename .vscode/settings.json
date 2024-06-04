@@ -3,5 +3,6 @@
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "cSpell.enableFiletypes": ["!html"]
 }
