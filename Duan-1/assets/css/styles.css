@@ -26,6 +26,11 @@ html {
     font-size: 62.5%;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 body {
     /* overflow-x: hidden; */
     font-size: 1.6rem;
@@ -33,7 +38,6 @@ body {
 }
 
 .fixed-header {
-    
     background: #e6f0ff;
     padding-top: 26px;
     position: sticky;
@@ -43,8 +47,9 @@ body {
 .hero-wrap {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background: #e6f0ff;
-    height: 100vh;
+    height: calc(100vh - 90px);
     position: relative;
 }
 
@@ -99,14 +104,11 @@ body {
     border-radius: 8px;
 }
 
-.hero {
-    margin-top: 130px;
-}
 
-.hero .info {
+.hero-wrap .info {
     width: 51%;
 }
-.hero .subtitle {
+.hero-wrap .subtitle {
     color: #687690;
     font-size: 1.8rem;
     line-height: 1.5;
@@ -114,7 +116,7 @@ body {
     letter-spacing: 0.01em;
 }
 
-.hero .title {
+.hero-wrap .title {
     margin-top: 18px;
     color: #000336;
     font-size: 55px;
@@ -122,7 +124,7 @@ body {
     line-height: 1.19; /* 118.75% */
 }
 
-.hero .desc {
+.hero-wrap .desc {
     margin-top: 30px;
     color: #5a6473;
     font-size: 18px;
@@ -194,6 +196,7 @@ body {
     font-size: 3.5rem;
     font-weight: 600;
     line-height: 35px; /* 100% */
+
 }
 
 .guides .sub-title::before {
@@ -261,12 +264,12 @@ body {
     min-width: 170px;
 }
 /* featured */
+
 .featured {
     display: flex;
     background: #f5fafe;
     margin-top: 41px;
     padding-top: 110px 0;
-
     height: 100vh;
 }
 
@@ -275,7 +278,10 @@ body {
     font-size: 3.5rem;
     font-weight: 600;
     line-height: 35px; /* 100% */
+    padding-top: 110px;
 }
+
+
 
 .featured .row {
     display: flex;
