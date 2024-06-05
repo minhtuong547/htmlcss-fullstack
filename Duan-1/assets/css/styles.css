@@ -104,7 +104,6 @@ body {
     border-radius: 8px;
 }
 
-
 .hero-wrap .info {
     width: 51%;
 }
@@ -196,7 +195,6 @@ body {
     font-size: 3.5rem;
     font-weight: 600;
     line-height: 35px; /* 100% */
-
 }
 
 .guides .sub-title::before {
@@ -280,8 +278,6 @@ body {
     line-height: 35px; /* 100% */
     padding-top: 110px;
 }
-
-
 
 .featured .row {
     display: flex;
