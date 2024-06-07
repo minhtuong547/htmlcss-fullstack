@@ -14,6 +14,17 @@ body {
 a {
     text-decoration: none;
 }
+
+.line-clamp {
+    display: -webkit-box;
+    --webkit-line-clamp: var(--line-clamp, 1);
+    --webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
 .btn {
     display: inline-block;
     min-width: 118px;
@@ -27,6 +38,23 @@ a {
     border-radius: 999px;
 }
 
+.sub-title {
+    color: #171100;
+    font-family: Sen;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 68px; /* 117.241% */
+    letter-spacing: -1.16px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.break {
+    word-break: break-all;
+}
 /* header */
 .navbar img {
     margin-left: 24px;
@@ -57,7 +85,7 @@ header {
     display: flex;
 }
 .navbar li {
-    padding: 8px 21px ;
+    padding: 8px 21px;
     align-items: center;
     color: #5f5b53;
     font-size: 16px;
@@ -104,6 +132,11 @@ header {
     height: 685px;
     object-fit: cover;
     border-radius: 20px;
+}
+
+.hero {
+    padding-top: 56px;
+    background: #fffcf4;
 }
 .hero .card {
     right: 600px;
@@ -163,16 +196,8 @@ header {
 
 .hero .text {
     width: 52%;
+    margin: 64px 0 0 130px;
     margin-left: 30px;
-}
-
-.hero .text .sub-title {
-    color: #171100;
-    font-family: Sen;
-    font-size: 58px;
-    font-weight: 700;
-    line-height: 68px; /* 117.241% */
-    letter-spacing: -1.16px;
 }
 
 .hero .text .desc {
@@ -240,4 +265,130 @@ header {
     font-size: 44px;
     font-weight: 700;
     line-height: 54px; /* 122.727% */
+}
+
+/* popure */
+.popular {
+    padding: 65px 0;
+    margin-top: 135px;
+}
+.popular .controls {
+    display: flex;
+    gap: 18px;
+}
+
+.popular .controls-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffb900;
+    color: #ffb900;
+    border-radius: 50%;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+}
+.popular .controls-btn:hover {
+    background-color: #ffb900;
+    color: white;
+    cursor: pointer;
+}
+
+.popular .sub-title {
+    font-size: 38px;
+    line-height: 48px; /* 126.316% */
+    letter-spacing: -0.76px;
+}
+
+.popular-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popular .info .desc {
+    color: #5f5b53;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+
+.popular .course-list {
+    display: flex;
+    margin-top: 55px;
+    gap: 30px;
+}
+
+.popular .course-item {
+    border-radius: 12px;
+    background: #fff;
+    border: 1px solid #e2dfda;
+
+    flex: 1;
+}
+
+.popular .course-item:hover {
+    border-color: transparent;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.popular .course-list .info {
+    padding: 16px 22px 22px;
+}
+
+.popular .course-list .head,
+.popular .course-list .rating,
+.popular .course-list .foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular .course-list .info .desc {
+    margin-top: 6px;
+}
+.popular .course-item .thumb {
+    margin: -1px;
+    width: calc(100% + 2px);
+    border-radius: 12px 12px 0px 0px;
+    height: 278px;
+    object-fit: cover;
+}
+
+.popular .course-list .title a {
+    padding-right: 6px;
+    color: #171100;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px; /* 166.667% */
+}
+
+.popular .rating .value {
+    margin-left: 6px;
+    color: #fea31b;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+
+.popular .course-list .foot {
+    margin-top: 12px;
+}
+
+.popular .course-item .price {
+    color: #171100;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px; /* 166.667% */
+}
+
+.popular .course-item .book-btn {
+    border: none;
+}
+
+.popular .course-item .book-btn:hover {
+    color: white;
+    background-color: #ffb900;
 }
