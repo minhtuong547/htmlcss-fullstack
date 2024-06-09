@@ -443,7 +443,7 @@ header {
 }
 
 .feedback-item .dot.acctive {
-    background-color: #FFB900;
+    background-color: #ffb900;
     cursor: default;
 }
 .feedback-item .content {
@@ -453,9 +453,100 @@ header {
 
 .feedback-item blockquote {
     margin-left: 30px;
-    color: #FFF;
-font-size: 26px;
-font-style: italic;
-font-weight: 400;
-line-height: 40px; /* 153.846% */
+    color: #fff;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 40px; /* 153.846% */
 }
+
+/* feature */
+
+.feature {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.feature .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature .images {
+    display: flex;
+    gap: 0 30px;
+    margin-right: 130px;
+}
+.feature .images img:first-child {
+    margin-top: 34px;
+}
+
+.feature .images img {
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.feature .content-lv2 {
+    width: 41%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.feature .desc {
+    margin-top: 16px;
+
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5f5b53;
+}
+
+.feature .content .btn {
+    min-width: 137px;
+    margin-top: 32px;
+    background-color: #ffb900;
+    color: white;
+}
+
+.feature .content .sub-title {
+    margin-top: 58px;
+        font-size: 38px;
+        line-height: 48px; /* 126.316% */
+        letter-spacing: -0.76px;
+    
+}
+
+/* fetures 2 */
+
+.feature-2nd {
+    margin-top: 70px;
+}
+
+.feature-2nd .body {
+    flex-direction: row-reverse;
+}
+
+
+
+.feature-2nd .images {
+    margin-right: 0;
+}
+.feature-2nd .images img {
+    width: 470px;
+    height: 440px;
+
+}
+
+.feature-2nd .content-lv2 .sub-title {
+    
+    font-size: 3.8rem;
+}
+
+.feature-2nd .content-lv2 {
+    width: 49%;
+}
+
+/* blog */
