@@ -457,3 +457,102 @@ header {
     vertical-align: middle;
     margin-right: 10px;
 }
+/* stats */
+
+.stats {
+    margin-top: 389px;
+    display: flex;
+}
+
+.stats .stats-list {
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+}
+
+.stats .stats-list .stats-number {
+    color: #0d1111;
+    font-size: 62px;
+    font-weight: 700;
+}
+
+.stats .stats-list .desc {
+    margin-top: 11px;
+    color: #767e7e;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* teacher */
+.teacher {
+    margin-top: 264px;
+}
+.teacher .body {
+    display: flex;
+}
+
+.teacher .quote {
+    padding-right: 36px;
+}
+.teacher .open-quote {
+    margin-top: 37px;
+}
+.teacher .desc {
+    margin-top: 27px;
+    width: 419px;
+    color: #5d6564;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 48px; /* 150% */
+}
+
+.teacher .desc-student {
+    margin-top: 33px;
+    color: #767e7e;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.teacher .desc-student::before {
+    display: inline-block;
+    content: "";
+    width: 8px;
+    height: 2px;
+    background: #070707;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.teacher .desc-student strong {
+    color: #070707;
+    font-size: 16px;
+    font-weight: 600;
+}
+.teacher .teacher-icon {
+    display: inline-flex;
+    margin-top: 52px;
+}
+.teacher .teacher-icon .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #2ac9bf;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.teacher .teacher-icon .icon:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+.teacher-img {
+    padding-left: 36px;
+}
+
+.teacher-img .images {
+    width: 679px;
+    height: 481px;
+    object-fit: cover;
+}
