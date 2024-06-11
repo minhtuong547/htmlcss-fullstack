@@ -20,6 +20,11 @@ button {
     border: none;
 }
 
+.desc-head {
+    color: #767e7e;
+    font-size: 12px;
+    font-weight: 700;
+}
 .btn {
     display: inline-block;
     min-width: 186px;
@@ -284,13 +289,6 @@ header {
     margin-top: 130px;
 }
 
-
-.feature .feature-top .desc-head {
-    color: #767e7e;
-    font-size: 12px;
-    font-weight: 700;
-}
-
 .feature .feature-top .title {
     margin-top: 18px;
     width: 577px;
@@ -312,7 +310,6 @@ header {
     margin-top: 80px;
     justify-content: space-between;
     gap: 275px;
-    
 }
 
 .feature .feature-bottom .images {
@@ -342,3 +339,121 @@ header {
     flex-direction: column;
 }
 
+/* popular  */
+.popular {
+    margin-top: 130px;
+}
+
+.popular .heading {
+    width: 1170px;
+    height: 182px;
+}
+
+.popular .title {
+    margin-top: 18px;
+    color: #0d1111;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.popular .desc {
+    width: 525px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+}
+
+.popular .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular .row .link {
+    display: flex;
+    color: #1ebfc1;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration-line: underline;
+    align-items: center;
+}
+
+.popular-list {
+    display: flex;
+    margin-top: 79px;
+    gap: 47px;
+    flex: 1;
+}
+
+.popular-item .images {
+    position: relative;
+    width: 359px;
+    height: 393px;
+    object-fit: cover;
+    border-radius: 8px;
+    opacity: 0.35;
+    background: #d0efed;
+}
+
+.popular-item .rating {
+    position: absolute;
+    width: 325px;
+    height: 195px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+    margin-top: -124px;
+    margin-left: 17px;
+}
+.popular-item .popular-text {
+    margin-top: 17px;
+    margin-left: 25px;
+}
+
+.popular-item .sub-title {
+    color: #0d1111;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.popular-item .price {
+    margin-top: 16px;
+    color: #767e7e;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.popular-item .price strong {
+    color: #0d1111;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.popular-item .desc {
+    color: #9da6a5;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.popular-item .popular-stats {
+    display: flex;
+}
+
+.popular-item .popular-stats .desc-stats {
+    margin-top: 18px;
+    color: #9da6a5;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.popular-item .popular-stats .desc-stats::before {
+    display: inline-block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #1bbfc1;
+    vertical-align: middle;
+    margin-right: 10px;
+}
