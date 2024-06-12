@@ -551,8 +551,36 @@ header {
     padding-left: 36px;
 }
 
-.teacher-img .images {
-    width: 679px;
-    height: 481px;
-    object-fit: cover;
+/* cta  */
+.cta {
+    margin-top: 130px;
+    background: #def6f5;
+}
+
+.cta .cta-list {
+    display: flex;
+    padding-top: 76px;
+    padding-bottom: 88px;
+
+}
+
+.cta .cta-item .sub-title {
+    width: 420px;
+    color: #070707;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.cta .cta-item .desc {
+    margin-top: 18px;
+    color: #767e7e;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.cta .cta-item .btn-cta {
+    margin-top: 20px;
+    margin-left: 410px;
+
 }
