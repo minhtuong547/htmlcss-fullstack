@@ -561,7 +561,6 @@ header {
     display: flex;
     padding-top: 76px;
     padding-bottom: 88px;
-
 }
 
 .cta .cta-item .sub-title {
@@ -578,9 +577,52 @@ header {
     font-weight: 400;
 }
 
-
 .cta .cta-item .btn-cta {
     margin-top: 20px;
     margin-left: 410px;
+}
 
+/* footer */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 130px;
+}
+
+.footer .row .heading {
+    color: #2e2e2e;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.footer .row .sub-heading {
+    margin-top: 15px;
+    padding: 5px 5px 5px 0;
+    color: #535353;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer .row .column .item {
+    display: flex;
+    margin-top: 18px;
+    align-items: center;
+}
+
+.footer .column .desc-social {
+    margin-left: 9px;
+    color: #535353;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer .copyright {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #b0b5b4;
+    font-size: 18px;
+    font-weight: 400;
 }
