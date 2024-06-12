@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đánh dấu số bài đã học</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            height: 90vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        #lesson-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .lesson {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #e0e0e0;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .lesson.completed {
+            background-color: #8bc34a;
+            text-decoration: line-through;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Danh sách bài học</h1>
+        <ul id="lesson-list">
+            <!-- Sử dụng JavaScript để tạo 119 bài học -->
+        </ul>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const lessonList = document.getElementById('lesson-list');
+
+            // Tạo 119 bài học
+            for (let i = 1; i <= 119; i++) {
+                const lesson = document.createElement('li');
+                lesson.className = 'lesson';
+                lesson.textContent = 'Bài ' + i;
+                lessonList.appendChild(lesson);
+            }
+
+            const lessons = document.querySelectorAll('.lesson');
+
+            lessons.forEach(lesson => {
+                lesson.addEventListener('click', () => {
+                    lesson.classList.toggle('completed');
+                    saveProgress();
+                });
+            });
+
+            loadProgress();
+        });
+
+        function saveProgress() {
+            const lessons = document.querySelectorAll('.lesson');
+            const progress = [];
+
+            lessons.forEach(lesson => {
+                progress.push(lesson.classList.contains('completed'));
+            });
+
+            localStorage.setItem('lessonProgress', JSON.stringify(progress));
+        }
+
+        function loadProgress() {
+            const progress = JSON.parse(localStorage.getItem('lessonProgress'));
+
+            if (progress) {
+                const lessons = document.querySelectorAll('.lesson');
+
+                lessons.forEach((lesson, index) => {
+                    if (progress[index]) {
+                        lesson.classList.add('completed');
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>
