@@ -220,12 +220,14 @@
             timestampDiv.textContent = `Thời gian hiện tại: ${timeString}`;
         }
 
-        function scrollToCompletedLesson() {
-            const completedLesson = document.querySelector('.lesson.completed');
-            if (completedLesson) {
-                completedLesson.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
+function scrollToCompletedLesson() {
+    const lessons = document.querySelectorAll('.lesson.completed');
+    if (lessons.length > 0) {
+        const lastCompletedLesson = lessons[lessons.length - 1];
+        lastCompletedLesson.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
     </script>
 </body>
 </html>
