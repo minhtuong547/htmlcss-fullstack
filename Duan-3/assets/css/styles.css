@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Sora", sans-serif;
+}
+/* commom */
+a {
+  text-decoration: none;
+}
+.button {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #2e80ce;
+  border-radius: 99px;
+  padding: 15px 20px;
+  background: #2e80ce;
+}
+
+.button:hover {
+  background-color: #0e7adf;
+}
+.dot_icon {
+  vertical-align: middle;
+}
+
+/* logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo .logo_circel {
+  width: 30px;
+}
+.logo .text_logo {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 6px;
+  width: 50px;
+}
+.logo .text_logo .logo_brand {
+  display: block;
+  color: #fff;
+}
+
+.logo .text_logo .logo_brand-small {
+  display: block;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14px;
+}
+/* header */
+header.header {
+  min-height: 100vh;
+  padding-top: 30px;
+  background-color: #10375c;
+}
+
+header .container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+header .header_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* header navbar */
+header .navbar .navbar_list {
+  display: flex;
+}
+
+header .navbar .navbar_list .navbar_item .navbar_link {
+  padding: 4px 21px;
+  color: #c9d2da;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+header .navbar .navbar_list .navbar_item .navbar_link:hover {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+header .navbar .navbar_list .navbar_item .navbar_active {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* header action */
+header .header_action {
+  display: flex;
+  gap: 28px;
+}
+
+header .header_action .header_action_login {
+  display: flex;
+  align-items: center;
+  color: #c9d2da;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px; /* 175% */
+}
+header .header_action .header_action_signup {
+  color: #fff;
+  text-align: center;
+  font-family: Sora;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+
+header .header_action .button {
+  padding: 8px 20px;
+}
+/* header hero */
+header .hero {
+  display: flex;
+  padding-top: 210px;
+  gap: 113px;
+}
+
+header .hero .text_hero .text_title {
+  width: 517px;
+  color: #fff;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 80px; /* 114.286% */
+  letter-spacing: -1.4px;
+}
+
+header .hero .text_hero .text_desc {
+  width: 468px;
+  margin-top: 22px;
+  color: #c9d2da;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px; /* 166.667% */
+}
+header .hero .text_hero .contact_action .button {
+  border-radius: 30px;
+}
+header .hero .text_hero .contact_action .text_button {
+  margin-top: 38px;
+  color: #fff;
+  text-align: center;
+  font-family: Sora;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+
+header .hero .text_hero .contact_action .hotline_contact {
+  margin-left: 38px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+header .hero .img_hero {
+  display: flex;
+  align-items: center; /* 👉 canh giữa theo chiều dọc */
+}
+header .hero .img_hero img {
+  object-fit: cover;
+}
+header .hero .img_hero .img_big {
+  z-index: 1;
+  width: 330px;
+  height: 540px;
+  border-radius: 6px;
+  background-position: 50%;
+}
+
+header .hero .img_hero .img_small {
+  margin-left: -10px;
+  width: 210px;
+  height: 410px;
+  border-radius: 0px 6px 6px 0px;
+}
+
+/* ------ done header ----- */
+/* main */
+
+/* services */
+main .services {
+  padding: 170px 0;
+}
+main .services .container {
+  width: 1440px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+main .services .services_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .services .services_header .services_title {
+  color: #10375c;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px; /* 120% */
+  letter-spacing: -1px;
+}
+
+main .services .services_header .services_desc {
+  width: 468px;
+  text-align: center;
+  margin-top: 18px;
+  color: #575f66;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px; /* 166.667% */
+}
+main .services .services_body {
+  display: flex;
+  margin-top: 70px;
+}
+
+main .services .services_body .img_big {
+  width: 570px;
+  height: 570px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+main .services .services_body .services_body_card {
+  margin-left: 130px;
+}
+main .services .services_body .services_body_card .card_list {
+  margin-top: 35px;
+}
+
+main .services .services_body .services_body_card .card_item {
+  display: flex;
+  width: 470px;
+  height: 128px;
+  background: #fff;
+}
+
+main .services .services_body .services_body_card .card_item:hover {
+  border-radius: 10px;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+main .services .services_body .services_body_card .card_item:hover svg path {
+  fill: #ffffff;
+}
+main .services .services_body .services_body_card .card_item:hover svg rect {
+  fill: #2e80ce;
+}
+main .services .services_body .services_body_card .card_item .text_card {
+  display: flex;
+  flex-direction: column;
+  margin-left: 19px;
+}
+
+main .services .services_body .services_body_card .card_item .title_card {
+  margin-top: 15px;
+  color: #10375c;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+main .services .services_body .services_body_card .card_item .desc_card {
+  margin-top: 8px;
+  width: 351px;
+  color: #575f66;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px; /* 175% */
+}
+
+main .services .services_body .services_button {
+  margin-top: 55px;
+}
+main .services .services_body .services_button .button {
+  width: 205px;
+  height: 60px;
+  border-radius: 30px;
+}
+main .services .services_body .services_button .button_text {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
