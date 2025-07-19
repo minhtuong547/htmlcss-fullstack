@@ -304,3 +304,95 @@ main .services .services_body .services_button .button_text {
   font-weight: 400;
   line-height: 30px; /* 166.667% */
 }
+
+/* works */
+
+.works {
+  background: #f6fbff;
+}
+
+.works .container {
+  width: 1440px;
+  max-width: calc(100% - 48px);
+  height: 826px;
+  margin: 0 auto;
+}
+
+.works .container .works_text .works_title {
+  margin-top: 100px;
+  color: #10375c;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px; /* 120% */
+  letter-spacing: -1px;
+}
+
+.works .container .works_text .works_desc {
+  margin-top: 18px;
+  width: 468px;
+  color: #575f66;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px; /* 166.667% */
+}
+.works .container .works_card {
+  margin-top: 102px;
+}
+.works .container .works_card .card_list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.works .container .works_card .card_item {
+  border: solid 16px #eaf6ff;
+  width: 338px;
+  height: 370px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.works .container .works_card .card_item:hover {
+  border: solid 16px #2e80ce;
+  border-radius: 4px;
+  margin-top: -16px;
+}
+.works .container .works_card .card_item:hover .learn_more {
+  color: #2e80ce;
+}
+
+.works .container .works_card .card_item svg {
+  margin-top: 43px;
+  margin-left: 42px;
+}
+
+.works .container .works_card .card_item .title_card {
+  margin-top: 18px;
+  margin-left: 42px;
+  color: #10375c;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 36px; /* 138.462% */
+}
+
+.works .container .works_card .card_item .desc_card {
+  width: 254px;
+  margin-top: 28px;
+  margin-left: 42px;
+  color: #575f66;
+  font-family: Sora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px; /* 175% */
+}
+
+.works .container .works_card .card_item .learn_more {
+  margin-top: 18px;
+  margin-left: 42px;
+  color: #575f66;
+  font-family: Sora;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px; /* 175% */
+}
