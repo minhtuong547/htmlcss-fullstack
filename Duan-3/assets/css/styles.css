@@ -317,9 +317,8 @@ main .services .services_body .services_button .button_text {
   height: 826px;
   margin: 0 auto;
 }
-
 .works .container .works_text .works_title {
-  margin-top: 100px;
+  padding-top: 100px;
   color: #10375c;
   font-size: 50px;
   font-weight: 600;
