@@ -396,3 +396,75 @@ main .services .services_body .services_button .button_text {
   font-weight: 300;
   line-height: 28px; /* 175% */
 }
+
+/* tooth */
+
+.tooth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 170px 0;
+  background: #fff;
+}
+
+.tooth .container {
+  display: flex;
+  width: 1440px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+.tooth .img_tooth {
+  position: relative;
+  padding-bottom: 121px;
+}
+.tooth .img_tooth .img_bottom {
+  width: 512px;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+}
+
+.tooth .img_tooth .img_top {
+  position: absolute;
+  margin-right: -58px;
+  right: 0;
+  bottom: 0;
+  width: 332px;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.tooth .tooth_text {
+  margin-left: 188px;
+}
+.tooth .tooth_text .title_tooth {
+  width: 470px;
+  margin-top: 82px;
+  color: #10375c;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px; /* 120% */
+  letter-spacing: -1px;
+}
+
+.tooth .tooth_text .desc_tooth {
+  width: 468px;
+  margin-top: 18px;
+  color: #575f66;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px; /* 166.667% */
+}
+.tooth .tooth_text .button_tooth {
+  margin-top: 38px;
+}
+
+.tooth .tooth_text .button_tooth .button_text{
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
