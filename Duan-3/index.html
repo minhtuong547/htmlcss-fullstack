@@ -329,5 +329,20 @@
         </div>
       </section>
     </main>
+    <script>
+      const isMobile =
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        );
+
+      if (isMobile) {
+        document.body.innerHTML = `
+      <div style="padding: 30px; text-align: center; font-family: sans-serif;">
+        <h2>Truy cập bị chặn</h2>
+        <p>Vui lòng truy cập trang web bằng máy tính để bàn (desktop).</p>
+      </div>
+    `;
+      }
+    </script>
   </body>
 </html>
