@@ -490,7 +490,7 @@ main .services .services_body .services_button .button_text {
   line-height: 60px; /* 120% */
   letter-spacing: -1px;
 }
-.virtual .header_virtual .button_header{
+.virtual .header_virtual .button_header {
   margin-top: 53px;
 }
 .virtual .header_virtual .button_text {
@@ -501,57 +501,55 @@ main .services .services_body .services_button .button_text {
   font-weight: 400;
   line-height: 30px; /* 166.667% */
 }
-.virtual .team_card{
+.virtual .team_card {
   margin-top: 70px;
 }
-.virtual .team_card .list_card{
+.virtual .team_card .list_card {
   display: flex;
   gap: 30px;
   justify-content: center;
 }
-.virtual .team_card .img_human{
+.virtual .team_card .img_human {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: flex-end;
   width: 270px;
   height: 318px;
   border-radius: 6px;
-  background: #EAF6FF;
+  background: #eaf6ff;
 }
 
-.virtual .team_card .item_card .human{
-
+.virtual .team_card .item_card .human {
   border-radius: 6px;
   width: 262px;
   height: 290px;
   object-fit: cover;
 }
 
-.virtual .team_card .item_card .human_4{
+.virtual .team_card .item_card .human_4 {
   margin-left: 30px;
 }
 .virtual .team_card .item_card .text_card {
-
 }
 
-.virtual .team_card .item_card .text_card .title_card{
+.virtual .team_card .item_card .text_card .title_card {
   margin-top: 12px;
-  color: #10375C;
+  color: #10375c;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px; /* 175% */
 }
 
-.virtual .team_card .item_card .text_card .desc_card{
-  color: #575F66;
+.virtual .team_card .item_card .text_card .desc_card {
+  color: #575f66;
   text-align: center;
   font-size: 14px;
   font-weight: 300;
   line-height: 26px; /* 185.714% */
 }
 
-.virtual .team_card .button_left_right{
+.virtual .team_card .button_left_right {
   display: flex;
   justify-content: center;
   margin-top: 38px;
@@ -559,10 +557,10 @@ main .services .services_body .services_button .button_text {
 }
 
 .virtual .team_card .button_left_right svg:hover circle {
-  fill:#2E80CE;
+  fill: #2e80ce;
   cursor: pointer;
 }
-.virtual .team_card .button_left_right svg:hover path{
+.virtual .team_card .button_left_right svg:hover path {
   stroke: white;
 }
 
@@ -572,7 +570,7 @@ main .services .services_body .services_button .button_text {
   padding: 170px 0;
 }
 
-.phone .container{
+.phone .container {
   display: flex;
   justify-content: center;
   width: 1440px;
@@ -585,11 +583,11 @@ main .services .services_body .services_button .button_text {
   width: 1170px;
   height: 427px;
   border-radius: 4px;
-  background: #2E80CE;
+  background: #2e80ce;
   gap: 160px;
 }
 
-.phone .background_phone .img_phone .phone_item{
+.phone .background_phone .img_phone .phone_item {
   display: block;
   width: 284px;
   height: 522px;
@@ -601,17 +599,17 @@ main .services .services_body .services_button .button_text {
 .phone .background_phone .text_phone .title_phone {
   width: 489px;
   margin-top: 76px;
-  color: #FFF;
+  color: #fff;
   font-size: 50px;
   font-weight: 600;
   line-height: 60px; /* 120% */
   letter-spacing: -1px;
 }
 
-.phone .background_phone .text_phone .desc_phone{
+.phone .background_phone .text_phone .desc_phone {
   width: 586px;
   margin-top: 18px;
-  color: #FFF;
+  color: #fff;
   font-size: 18px;
   font-weight: 300;
   line-height: 30px; /* 166.667% */
@@ -632,23 +630,23 @@ main .services .services_body .services_button .button_text {
   margin: 0 auto;
   gap: 130px;
 }
-.news .container .news_left .text_news{
+.news .container .news_left .text_news {
   display: flex;
   flex-direction: column;
   margin-top: 68px;
 }
 .news .container .news_left .text_news .title_news {
   width: 470px;
-  color: #10375C;
+  color: #10375c;
   font-size: 50px;
   font-weight: 600;
   line-height: 60px; /* 120% */
   letter-spacing: -1px;
 }
 
-.news .container .news_left .text_news .read_more{
+.news .container .news_left .text_news .read_more {
   padding: 28px 0;
-  color: #10375C;
+  color: #10375c;
   font-family: Inter;
   font-size: 18px;
   font-weight: 600;
@@ -661,60 +659,121 @@ main .services .services_body .services_button .button_text {
   text-underline-position: from-font;
 }
 
-.news .container .news_left .button_left_right{
+.news .container .news_left .button_left_right {
   display: flex;
   gap: 18px;
 }
 
 .news .container .news_left .button_left_right svg:hover circle {
-  fill:#2E80CE;
+  fill: #2e80ce;
   cursor: pointer;
 }
-.news .container .news_left .button_left_right svg:hover path{
+.news .container .news_left .button_left_right svg:hover path {
   stroke: white;
 }
-.news .container .news_right .list_card{
+.news .container .news_right .list_card {
   display: flex;
   gap: 30px;
 }
-.news .container .news_right .list_card .item_card{
+.news .container .news_right .list_card .item_card {
   width: 270px;
   height: 375px;
   border-radius: 12px;
-  border: 1px solid #E8EBEE;
-  background: #FFF;
+  border: 1px solid #e8ebee;
+  background: #fff;
 }
-.news .container .news_right .list_card .text_card{
+.news .container .news_right .list_card .text_card {
   margin-left: 22px;
 }
-.news .container .news_right .list_card .item_card .img_card{
+.news .container .news_right .list_card .item_card .img_card {
   width: 270px;
   height: 172px;
   border-radius: 12px 12px 0px 0px;
   object-fit: cover;
 }
 
-.news .container .news_right .list_card .item_card .title_news{
+.news .container .news_right .list_card .item_card .title_news {
   width: 224px;
   margin-top: 18px;
-  color: #10375C;
+  color: #10375c;
   font-size: 16px;
   font-weight: 600;
   line-height: 26px; /* 162.5% */
 }
 
-.news .container .news_right .list_card .item_card .desc_news{
+.news .container .news_right .list_card .item_card .desc_news {
   width: 226px;
   margin-top: 10px;
-  color: #575F66;
+  color: #575f66;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px; /* 171.429% */
   margin-bottom: 12px;
 }
 
-.news .container .news_right .list_card .item_card .learn_more{
-  color: #10375C;
+.news .container .news_right .list_card .item_card .learn_more {
+  color: #10375c;
   font-size: 14px;
   font-weight: 400;
+}
+
+/* contact */
+.contact {
+  padding: 170px 0;
+}
+
+.contact .container {
+  display: flex;
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+.contact .container .contact_body {
+  display: flex;
+  flex-direction: column;
+  width: 1170px;
+  height: 452px;
+  flex-shrink: 0;
+  background: #f6fbff;
+}
+
+.contact .container .contact_body .title_contact {
+  width: 813px;
+  margin: 100px auto 0 auto;
+  color: #10375c;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px; /* 120% */
+  letter-spacing: -1px;
+}
+
+.contact .container .contact_body .rectangle {
+  margin: 18px auto 18px auto;
+  width: 136px;
+  height: 2px;
+  background: #2e80ce;
+}
+
+.contact .container .contact_body .desc_contact {
+  margin: 0 auto;
+  width: 617px;
+  color: #575f66;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px; /* 175% */
+}
+
+.contact .container .contact_body .button_contact{
+  margin: 38px auto 0 auto;
+}
+
+.contact .container .contact_body .button_contact .button_text{
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
 }
