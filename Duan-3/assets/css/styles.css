@@ -460,10 +460,108 @@ main .services .services_body .services_button .button_text {
   margin-top: 38px;
 }
 
-.tooth .tooth_text .button_tooth .button_text{
-  color: #FFF;
+.tooth .tooth_text .button_tooth .button_text {
+  color: #fff;
   text-align: center;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px; /* 166.667% */
+}
+
+/* virtual */
+
+.virtual .container {
+  width: 1440px;
+  min-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+.virtual .header_virtual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.virtual .header_virtual .title_virtual {
+  color: #10375c;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px; /* 120% */
+  letter-spacing: -1px;
+}
+.virtual .header_virtual .button_header{
+  margin-top: 53px;
+}
+.virtual .header_virtual .button_text {
+  color: #fff;
+  text-align: center;
+  font-family: Sora;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+.virtual .team_card{
+  margin-top: 70px;
+}
+.virtual .team_card .list_card{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.virtual .team_card .img_human{
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-end;
+  width: 270px;
+  height: 318px;
+  border-radius: 6px;
+  background: #EAF6FF;
+}
+
+.virtual .team_card .item_card .human{
+
+  border-radius: 6px;
+  width: 262px;
+  height: 290px;
+  object-fit: cover;
+}
+
+.virtual .team_card .item_card .human_4{
+  margin-left: 30px;
+}
+.virtual .team_card .item_card .text_card {
+
+}
+
+.virtual .team_card .item_card .text_card .title_card{
+  margin-top: 12px;
+  color: #10375C;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+
+.virtual .team_card .item_card .text_card .desc_card{
+  color: #575F66;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px; /* 185.714% */
+}
+
+.virtual .team_card .button_left_right{
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+  gap: 18px;
+}
+
+.virtual .team_card .button_left_right svg:hover circle {
+  fill:#2E80CE;
+  cursor: pointer;
+}
+.virtual .team_card .button_left_right svg:hover path{
+  stroke: white;
 }
