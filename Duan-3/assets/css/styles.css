@@ -622,3 +622,99 @@ main .services .services_body .services_button .button_text {
   margin-top: 38px;
   gap: 28px;
 }
+
+/* news */
+
+.news .container {
+  display: flex;
+  width: 1440px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+  gap: 130px;
+}
+.news .container .news_left .text_news{
+  display: flex;
+  flex-direction: column;
+  margin-top: 68px;
+}
+.news .container .news_left .text_news .title_news {
+  width: 470px;
+  color: #10375C;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px; /* 120% */
+  letter-spacing: -1px;
+}
+
+.news .container .news_left .text_news .read_more{
+  padding: 28px 0;
+  color: #10375C;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px; /* 155.556% */
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.news .container .news_left .button_left_right{
+  display: flex;
+  gap: 18px;
+}
+
+.news .container .news_left .button_left_right svg:hover circle {
+  fill:#2E80CE;
+  cursor: pointer;
+}
+.news .container .news_left .button_left_right svg:hover path{
+  stroke: white;
+}
+.news .container .news_right .list_card{
+  display: flex;
+  gap: 30px;
+}
+.news .container .news_right .list_card .item_card{
+  width: 270px;
+  height: 375px;
+  border-radius: 12px;
+  border: 1px solid #E8EBEE;
+  background: #FFF;
+}
+.news .container .news_right .list_card .text_card{
+  margin-left: 22px;
+}
+.news .container .news_right .list_card .item_card .img_card{
+  width: 270px;
+  height: 172px;
+  border-radius: 12px 12px 0px 0px;
+  object-fit: cover;
+}
+
+.news .container .news_right .list_card .item_card .title_news{
+  width: 224px;
+  margin-top: 18px;
+  color: #10375C;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px; /* 162.5% */
+}
+
+.news .container .news_right .list_card .item_card .desc_news{
+  width: 226px;
+  margin-top: 10px;
+  color: #575F66;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px; /* 171.429% */
+  margin-bottom: 12px;
+}
+
+.news .container .news_right .list_card .item_card .learn_more{
+  color: #10375C;
+  font-size: 14px;
+  font-weight: 400;
+}
