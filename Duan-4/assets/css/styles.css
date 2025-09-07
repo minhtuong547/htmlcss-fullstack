@@ -9,6 +9,7 @@ html {
 body {
   font-family: Poppins, sans-serif;
   font-size: 1.6rem;
+  background: #fffaf5;
 }
 /* common */
 .button {
@@ -29,13 +30,9 @@ a {
 }
 
 /* header */
-.header {
-  min-height: 100vh;
-  background: #fffaf5;
-}
 
 .header .container {
-  width: 1440px;
+  width: 1170px;
   max-width: calc(100% - 48px);
   margin: 0 auto;
 }
@@ -95,7 +92,9 @@ a {
 .header .header__body .card_left {
   position: relative;
 }
-
+.header .header__body .card_left .cat_left {
+  padding-bottom: 94px;
+}
 /* cat left */
 .header .header__body .card_left .cat_left .images_primary {
   position: relative;
@@ -151,7 +150,7 @@ a {
   background: #faa7ad;
   outline: 2px solid #fcdcdf;
   right: -163px;
-  bottom: -58px;
+  bottom: 36px;
   z-index: 4;
 }
 
@@ -168,7 +167,7 @@ a {
   background: #fff;
   box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
   right: 9px;
-  bottom: -94px;
+  bottom: 0;
   z-index: 4;
 }
 
@@ -317,4 +316,154 @@ a {
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
+}
+
+/* about */
+
+.about {
+  padding-top: 77px;
+}
+
+.about .container {
+  display: flex;
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 53px auto;
+  gap: 108px;
+}
+.about .container .card_left{
+  padding-right: 92px;
+}
+.about .container .card_left .text_card {
+  margin-top: 69px;
+}
+.about .container .card_left .text_card .text {
+  color: #5e6085;
+  font-family: Sora;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px; /* 100% */
+}
+.about .container .card_left .text_card .text_title {
+  width: 446px;
+  margin-top: 15px;
+  color: #000958;
+  font-family: Sora;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 62px; /* 119.231% */
+}
+
+.about .container .card_left .text_card .text_desc {
+  width: 431px;
+  margin-top: 24px;
+  color: #656689;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+}
+
+.about .container .card_left .box_card .checkbox_bottom {
+  margin-top: 34px;
+}
+.about .container .card_left .checkbox_horizon {
+  display: flex;
+  gap: 62px;
+}
+.about .container .card_left .checkbox_shared {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  max-width: 250px;
+  gap: 10px;
+}
+.about .container .card_left .box_card {
+  margin-top: 54px;
+}
+.about .container .card_left .checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: #ff5d31;
+  box-shadow: 0 4px 15px -3px rgba(255, 93, 49, 0.69);
+}
+.about .container .card_left .text_checkbox {
+  color: #48496a;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px; /* 100% */
+}
+
+.about .container .card_right .images_card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 494px;
+  height: 559px;
+  border-radius: 16px;
+}
+.about .container .card_right .images_card::before {
+  position: absolute;
+  inset: auto 0 0 0;
+  content: "";
+  height: 336px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+  z-index: -1;
+}
+.about .container .card_right .images_card img {
+  position: absolute;
+  top: -18px;
+  width: 450px;
+  height: 602px;
+  object-fit: contain;
+}
+
+.about .container .card_right .images_card .deco_card {
+  position: absolute;
+  left: -92px;
+  top: 165px;
+  width: 136px;
+  height: 156px;
+  border-radius: 10px;
+  background: #5bd6e2;
+  box-shadow: -15px 26px 48px 0 rgba(85, 240, 255, 0.17);
+}
+
+.about .container .card_right .images_card .deco_card .number {
+  display: flex;
+  margin-top: 31px;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-family: Sora;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 42px; /* 100% */
+}
+
+.about .container .card_right .images_card .deco_card .desc {
+  margin-top: 14px;
+  text-align: center;
+  margin-left: 27px;
+  width: 83px;
+  color: #c6f4f9;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+
+.about .container .card_right .images_card .deco_card img {
+  position: absolute;
+  top: -45px;
+  right: -40px;
+  width: 100px;
+  height: 100px;
 }
