@@ -283,7 +283,9 @@ a {
   border-radius: 31px;
   background: #ff5b2e;
   box-shadow: 0 13px 26px -8px rgba(255, 91, 46, 0.42);
-  opacity: 1;
+}
+.header .header__body .card_right .action_card .button_hero:hover {
+  opacity: 0.9;
 }
 
 .header .header__body .card_right .action_card .button_hero span {
