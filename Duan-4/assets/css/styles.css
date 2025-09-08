@@ -922,3 +922,193 @@ a {
   font-weight: 500;
   line-height: 16px; /* 100% */
 }
+
+/* pricing */
+
+.pricing {
+  background: #fff6ed;
+  padding: 86px 0;
+}
+
+.pricing .container {
+  width: 1770px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+.pricing .card_top .text_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pricing .card_top .text_card .title {
+  color: #000958;
+  text-align: center;
+  font-family: Sora;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 62px; /* 119.231% */
+}
+
+.pricing .card_top .text_card .desc {
+  width: 709px;
+  margin-top: 24px;
+  color: #656689;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+}
+
+.pricing .card_top .action_button label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 38px;
+  width: 276px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 31px;
+  border: 1px solid #ff5b2e;
+  transition: all 500ms;
+  cursor: pointer;
+}
+.pricing .card_top .action_button label::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  right: 0;
+  width: 131px;
+  height: 56px;
+  border-radius: 31px;
+  background: #ff5b2e;
+  transition: all 500ms;
+}
+.pricing .card_top .action_button input:checked ~ label::before {
+  left: 0;
+}
+.pricing .card_top .action_button input:checked ~ label .span-1 {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 100% */
+}
+.pricing .card_top .action_button input:checked ~ label .span-2 {
+  color: #ff5b2e;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px; /* 100% */
+}
+.pricing .card_top .action_button label .span-1 {
+  color: #ff5b2e;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px; /* 100% */
+}
+.pricing .card_top .action_button label .span-2 {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 100% */
+}
+.pricing .card_top .action_button label span {
+  margin: 0 40px;
+  z-index: 1;
+}
+
+.pricing .card_body {
+  margin-top: 56px;
+}
+.pricing .card_body .list_card {
+  display: flex;
+  gap: 44px;
+  justify-content: center;
+}
+.pricing .card_body .item_card {
+  width: 302px;
+  height: 465px;
+  border-radius: 20px;
+  background: #fff;
+}
+.pricing .card_body .item_card .group_info {
+  margin: 30px 28px 0 28px;
+}
+
+.pricing .card_body .item_card .group_info .type {
+  color: #ff5b2e;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px; /* 100% */
+}
+
+.pricing .card_body .item_card .group_info .quality {
+  margin-top: 8px;
+  color: #3f4065;
+  font-family: Sora;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px; /* 100% */
+}
+
+.pricing .card_body .item_card .group_info .price {
+  margin-top: 24px;
+  color: #000958;
+  font-family: Sora;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px; /* 103.03% */
+}
+
+.pricing .card_body .item_card .group_info .button {
+  width: 246px;
+  height: 44px;
+  margin-top: 22px;
+  border-radius: 39px;
+  border: 1px solid rgba(255, 91, 46, 0.6);
+  color: #ff5b2e;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px; /* 100% */
+  margin-bottom: 24px;
+}
+
+.pricing .card_body .item_card .group_info .button-2 {
+  border-radius: 39px;
+  background: #ff5b2e;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px; /* 100% */
+}
+.pricing .card_body .item_card .group_info .group_text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.pricing .card_body .item_card .group_info .group_text .text {
+  color: #656689;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px; /* 100% */
+}
