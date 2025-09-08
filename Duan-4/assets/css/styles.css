@@ -931,7 +931,7 @@ a {
 }
 
 .pricing .container {
-  width: 1770px;
+  width: 1170px;
   max-width: calc(100% - 48px);
   margin: 0 auto;
 }
@@ -1111,4 +1111,107 @@ a {
   font-size: 14px;
   font-weight: 400;
   line-height: 14px; /* 100% */
+}
+/* reviews */
+
+.reviews {
+  padding-top: 53px;
+  background: #fffaf5;
+}
+
+.reviews .container {
+  display: flex;
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+  gap: 115px;
+}
+.reviews .container .card_left {
+  display: flex;
+  gap: 44px;
+}
+
+.reviews .container .card_left .button_direc {
+  display: flex;
+  align-items: center;
+}
+.reviews .container svg:hover circle {
+  fill: #ff5b2e;
+  cursor: pointer;
+}
+
+.reviews .container svg:hover path {
+  stroke: #fff;
+}
+.reviews .container .card_left .images_reviews {
+  position: relative;
+  width: 274px;
+  height: 350px;
+  border-radius: 137px;
+  background: #ffda54;
+}
+
+.reviews .container .card_left .images_reviews img {
+  position: absolute;
+  border-radius: 137px;
+  bottom: 0;
+  object-fit: contain;
+}
+.reviews .container .card_right{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 76px;
+}
+.reviews .container .card_right .text_card .title {
+  margin-top: 36px;
+  color: #000958;
+  font-family: Sora;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 62px; /* 119.231% */
+}
+
+.reviews .container .card_right .text_card .desc {
+  margin-top: 24px;
+  width: 553px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+}
+
+.reviews .container .card_right .text_card .owner {
+  display: flex;
+  align-items: center;
+  margin-top: 34px;
+  color: #282828;
+  font-family: Sora;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px; /* 100% */
+  margin-bottom: 92px;
+}
+
+.reviews .container .card_right .text_card .owner::before {
+  content: "";
+  display: inline-flex;
+  margin-right: 8px;
+  border-radius: 99px;
+  width: 20px;
+  height: 2px;
+  background: #000;
+}
+
+.reviews .container .card_right .dot {
+  position: absolute;
+  bottom: 0;
+  left: 62px;
+}
+
+.reviews .container .card_right .dot svg rect:hover {
+  fill: #FF5B2E;
+  cursor: pointer;
 }
