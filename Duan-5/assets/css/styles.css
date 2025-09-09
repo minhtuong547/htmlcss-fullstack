@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans";
+
+  font-size: 1.6rem;
+}
+
+/* common */
+
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 6.95px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 113px;
+  height: 52px;
+  border-radius: 6px;
+  background: #212832;
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 175% */
+}
+/* header */
+
+.header {
+  position: sticky;
+  top: 0;
+  padding-top: 42px;
+}
+
+.header .container .nav_bar {
+  display: flex;
+  align-items: center;
+}
+.header .container .nav_bar .menu {
+  margin-left: 70.32px;
+}
+.header .container .nav_bar .menu .list_menu {
+  display: flex;
+  gap: 48px;
+}
+
+.header .container .nav_bar .menu .list_menu .item_menu a {
+  color: #696d76;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+
+.header .container .nav_bar .menu .list_menu .item_menu .primary_cta {
+  position: relative;
+  color: #212832;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 175% */
+}
+
+.header .container .nav_bar .menu .list_menu .item_menu .primary_cta::before {
+  position: absolute;
+  display: flex;
+  content: "";
+  width: 47px;
+  height: 1px;
+  bottom: 0;
+  border-radius: 0.5px;
+  background: #7264d6;
+}
+.header .container .nav_bar .action_cta {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-left: 454px;
+}
+
+.header .container .nav_bar .action_cta .login {
+  color: #212832;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 175% */
+}
