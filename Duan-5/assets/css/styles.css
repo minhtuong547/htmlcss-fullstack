@@ -52,6 +52,9 @@ a {
   position: sticky;
   top: 0;
   padding-top: 42px;
+  background-color: #fff;
+  z-index: 100;
+  padding-bottom: 5px;
 }
 
 .header .container .nav_bar {
@@ -338,4 +341,118 @@ a {
   margin-top: 5px;
   font-weight: 400;
   line-height: 8px; /* 100% */
+}
+
+/* works */
+
+.works {
+  padding: 160px 0;
+}
+.works .container {
+  display: flex;
+  gap: 230px;
+}
+.works .card_left {
+  position: relative;
+  width: 470px;
+  height: 619px;
+}
+.works .card_left .human {
+  position: absolute;
+  width: 456px;
+  height: 619px;
+  object-fit: contain;
+}
+
+.works .card_left .deco_top {
+  position: absolute;
+  top: 76px;
+  right: 55px;
+}
+.works .card_left .deco_bottom {
+  position: absolute;
+  right: -100px;
+  bottom: 96px;
+  width: 226px;
+  height: 70px;
+  border-radius: 8px;
+  background: #fffdfa;
+  box-shadow: 0 14px 34px 0 rgba(0, 0, 0, 0.07);
+}
+
+.works .card_left .deco_bottom .group_deco {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
+}
+
+.works .card_left .deco_bottom .group_deco .title {
+  color: #212832;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.works .card_left .deco_bottom .group_deco .desc {
+  color: #696d76;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.works .card_right {
+  margin-top: 29px;
+}
+
+.works .card_right .text_top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #696d77;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+
+.works .card_right .text_top::before {
+  content: "";
+  display: inline-flex;
+  width: 18px;
+  height: 2px;
+  background: #696d77;
+}
+.works .card_right .title {
+  width: 294px;
+  margin-top: 12px;
+  color: #212832;
+  font-family: "Open Sans";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px; /* 125% */
+  margin-bottom: 70px;
+}
+.works .card_right .group_text .title {
+  width: 470px;
+  color: #212832;
+  font-family: "Open Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 145.455% */
+  margin-bottom: 16px;
+}
+
+.works .card_right  .group_text .desc {
+  width: 470px;
+  color: #696d76;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  margin-bottom: 29px;
 }
