@@ -822,7 +822,9 @@ img {
   gap: 30px;
   margin-top: 70px;
 }
-
+.feedback .feedback_body .item_feedback {
+  position: relative;
+}
 .feedback .feedback_body .list_feedback .client_say {
   position: relative;
   display: flex;
@@ -851,10 +853,9 @@ img {
   filter: drop-shadow(0 22px 54px rgba(0, 0, 0, 0.07));
   z-index: 2;
 }
-.feedback .feedback_body .list_feedback .triangle-2 {
+.feedback .feedback_body .list_feedback .triangle-1 {
   position: absolute;
   left: 50%;
-  bottom: -80px;
   transform: translateX(-50%);
   width: 0;
   height: 0;
@@ -864,12 +865,9 @@ img {
   filter: drop-shadow(0 22px 54px rgba(0, 0, 0, 0.07));
   z-index: 2;
 }
-.feedback .feedback_body .list_feedback .triangle-2::before {
-  content: "";
-  display: inline-block;
+.feedback .feedback_body .list_feedback .triangle-2 {
   position: absolute;
   left: 50%;
-  bottom: -2px;
   transform: translateX(-50%);
   width: 0;
   height: 0;
@@ -877,8 +875,9 @@ img {
   border-right: 82px solid transparent;
   border-top: 82px solid #dfe2e8;
   filter: drop-shadow(0 22px 54px rgba(0, 0, 0, 0.07));
-  z-index: -1;
+  z-index: 1;
 }
+
 .feedback .feedback_body .list_feedback .client_say .text {
   width: 514px;
   color: #696d76;
@@ -888,4 +887,54 @@ img {
   font-style: italic;
   font-weight: 400;
   line-height: 34px; /* 154.545% */
+}
+
+.feedback .feedback_body .list_feedback .client_info {
+  padding-top: 118px;
+  display: flex;
+  justify-content: center;
+}
+.feedback .feedback_body .list_feedback .client_info .images_human {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.feedback .feedback_body .list_feedback .client_info .images_human .human {
+  width: 104px;
+  height: 104px;
+  border-radius: 52px;
+  background: #4ab5e3;
+  object-fit: cover;
+}
+
+.feedback .feedback_body .list_feedback .client_info .images_human .human-2 {
+  background: #439f90;
+}
+
+.feedback .feedback_body .list_feedback .client_info .images_human .title {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  color: #070052;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px; /* 138.462% */
+}
+.feedback .feedback_body .list_feedback .client_info .images_human .desc {
+  color: #696d76;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 18px;
+  margin-top: 2px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+
+.feedback .feedback_footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
 }
