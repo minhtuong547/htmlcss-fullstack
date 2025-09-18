@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -194,7 +195,7 @@
     </section>
     <section class="works">
       <div class="container">
-        <div class="card_left">
+        <div class="card_left" data-aos="fade-down-right">
           <img
             src="./assets/images/human_works.png"
             alt="human"
@@ -264,7 +265,7 @@
             </div>
           </div>
         </div>
-        <div class="card_right">
+        <div class="card_right" data-aos="fade-down-left">
           <p class="text_top">Digital Smart Wallet</p>
           <p class="title">How It Works</p>
           <div class="group_text">
@@ -296,7 +297,8 @@
         </div>
       </div>
     </section>
-    <section class="feature-1">
+    <section class="feature-1" data-aos="fade-up" data-aos-duration="3000">
+      >
       <div class="container">
         <div class="card_left">
           <p class="text_top">Digital Smart Wallet</p>
@@ -444,7 +446,12 @@
     </section>
     <section class="feature-2">
       <div class="container">
-        <div class="card_left">
+        <div
+          class="card_left"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <div class="images_card">
             <img src="./assets/images/feature-2_card.png" alt="" class="card" />
             <div class="group_payment">
@@ -739,7 +746,9 @@
             </div>
           </div>
         </div>
-        <div class="card_right">
+        <div class="card_right"           data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
           <p class="text_top">Digital Smart Wallet</p>
           <p class="title">Transfer and Deposite Your Money Anytime</p>
           <p class="desc">
@@ -766,7 +775,7 @@
             services that may inspire you
           </p>
         </div>
-        <div class="feedback_body">
+        <div class="feedback_body" data-aos="fade-up" data-aos-duration="3000">
           <ul class="list_feedback">
             <li class="item_feedback">
               <div class="client_say">
@@ -859,7 +868,12 @@
           <div class="card_right"><a href="#!" class="button">Read All</a></div>
         </div>
         <div class="card_body">
-          <ul class="list_card">
+          <ul
+            class="list_card"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <li class="item_card">
               <div class="group_item">
                 <div class="images">
@@ -921,7 +935,7 @@
         </div>
       </div>
     </section>
-    <section class="download">
+    <section class="download" data-aos="fade-down">
       <div class="container">
         <div class="star">
           <img src="./assets/images/star.svg" alt="" class="star-1" /><img
@@ -1224,7 +1238,9 @@
           ><a href="tel:1234567890">(123) 456-7890</a>
         </div>
       </div>
-      <div class="copyright"><p>&copy; 2020 Ligft Media All rights reserved.</p></div>
+      <div class="copyright">
+        <p>&copy; 2020 Ligft Media All rights reserved.</p>
+      </div>
     </footer>
     <script>
       const isMobile =
@@ -1240,6 +1256,10 @@
       </div>
     `;
       }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
