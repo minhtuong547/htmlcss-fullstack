@@ -90,13 +90,26 @@
     />
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
+    <!-- Pc header -->
     <header class="fixed-header">
       <div class="content">
         <nav class="navbar">
+          <!-- toggle tablet/mobile -->
+          <label for="menu_checkbox" class="toggle-menu"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                fill="currentColor"
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              ></path>
+            </svg>
+          </label>
           <!-- logo -->
-          <a id="#" href=""> <img src="./assets/img/Logo.svg" alt="Logo" /></a>
+          <a id="#" href="">
+            <img class="logo" src="./assets/img/Logo.svg" alt="Logo"
+          /></a>
           <!-- nav -->
           <ul>
             <li><a href="#">Home</a></li>
@@ -111,6 +124,32 @@
             <a href="" class="btn btn-acctions">Sign Up</a>
           </div>
         </nav>
+      </div>
+    </header>
+    <!-- tablet / mobile header -->
+    <header class="mobile-header">
+      <input
+        type="checkbox"
+        name=""
+        id="menu_checkbox"
+        class="menu_checkbox"
+        hidden
+      />
+      <!-- menu overlay -->
+      <label for="menu_checkbox" class="menu-overlay"></label>
+      <!-- menu drawer -->
+      <div class="menu-drawer">
+        <a id="#" href=""> <img src="./assets/img/Logo.svg" alt="Logo" /></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <hr class="hidden-tablet" />
+          <li class="hidden-tablet"><a href="#!">Sign In</a></li>
+          <li class="hidden-tablet"><a href="#!">Sign Up</a></li>
+        </ul>
       </div>
     </header>
     <main id="home">
@@ -129,7 +168,7 @@
           <img
             src="./assets/img/hero-img.svg"
             alt="Discover a place you'll love to live."
-            class="hero-img"
+            class="hero-img hidden-tablet-mobile"
           />
         </div>
       </div>
@@ -146,7 +185,7 @@
           </div>
           <div class="row row-desc">
             <p class="desc">More than 45,000+ companies trust besnik</p>
-            <p class="desc">5 Star Ratings (2k+ Review)</p>
+            <p class="desc hidden-mobile">5 Star Ratings (2k+ Review)</p>
           </div>
           <div class="images">
             <a href="">
@@ -297,7 +336,6 @@
               </div>
             </div>
 
-            <span></span>
             <!-- item 3 -->
             <div class="item">
               <a href="#!"
@@ -510,7 +548,7 @@
         </div>
       </div>
     </footer>
-    <script>
+    <!-- <script>
       const isMobile =
         /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
           navigator.userAgent
@@ -524,6 +562,6 @@
       </div>
     `;
       }
-    </script>
+    </script> -->
   </body>
 </html>
