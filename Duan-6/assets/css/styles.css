@@ -100,7 +100,6 @@ a {
 .header {
   display: flex;
   padding-top: 20px;
-  height: 100px;
   align-items: center;
   background: #fbfaff;
 }
