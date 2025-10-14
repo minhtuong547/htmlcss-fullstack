@@ -113,8 +113,8 @@ a {
   align-items: center;
 }
 .header .list_menu {
-  gap: 43px;
   display: flex;
+  gap: 43px;
 }
 
 .header .list_menu a {
@@ -160,6 +160,7 @@ a {
 }
 
 .hero .card_right {
+  position: relative;
   margin-top: 137px;
 }
 
@@ -228,4 +229,9 @@ a {
 .hero .card_right .follow_social .social {
   display: flex;
   gap: 20px;
+}
+.hero .card_right .deco_bottom{
+  position: absolute;
+  bottom: 0;
+  right: -177px;
 }
